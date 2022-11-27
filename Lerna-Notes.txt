@@ -1,0 +1,25 @@
+git clone https://github.com/lerna/getting-started-example
+docker build . -t lerna:test
+brew install lerna
+lerna bootstrap
+lerna init
+lerna info
+lerna run build
+lerna run test
+lerna publish
+lerna link
+
+lerna add react
+
+lerna add react --scope PACKAGE # This is built-in syntax to the lerna build file too
+lerna add react --dev
+
+
+.npmrc file for "REGISTRY_URL" a package feed to publish the pkgs
+
+## XXX Notes UpDate
+
+Install the dpkg or get the correct file name for the install of Python binaries
+
+or Just re-make the Docker image on a system better suited to run this with the least amount of
+custom configuration (ie downloading, compiling, configuring, etc)
